@@ -402,6 +402,9 @@ const Discover = () => {
                 sliderKey={`custom-slider-${slider.id}`}
                 title={slider.title ?? ''}
                 url={slider.data ?? ''}
+                linkUrl={`/discover/externalwatchlist?apiUrl=${encodeURIExtraParams(
+                  slider.data ?? ''
+                )}&title=${slider.title ?? ''}`}
               />
             );
             break;
